@@ -1,0 +1,5 @@
+#!/bin/sh
+
+wallpath=$($HOME/Pix/Wallpaper)
+wallpaper=$(ls $wallpath | dmenu -i -l 50 )
+[ $wallpaper -z ] || feh --bg-fill $wallpath/$wallpaper
